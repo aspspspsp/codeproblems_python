@@ -25,7 +25,7 @@ class Solution(object):
             if target < candidates[i]:
                 break
 
-            # 這個判斷保證不重複，例如：1，1，2，5，6，7，10，第二個1就會被跳過
+            # 這個判斷保證不重複，例如：1，1，2，5，6，7，10，歷遍到第二個1就會被跳過
             if i > cur and candidates[i] == candidates[i - 1]:
                 continue
 
